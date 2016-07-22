@@ -2,20 +2,83 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Конкатенация строк</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<form action="#">
-		
+	<form action="#" class="form-app">
 
-		<button id="run">Конкатинация</button>
+		<div class="row middle-elements">
+			<label>Язык:</label>
+			<div class="lang">
+				<input type="radio" name="lang" value="PHP" checked="cheched" id="php">
+				<label for="php">PHP</label>
+			</div>
+			<div class="lang">
+				<input type="radio" name="lang" value="C++" id="c-plus-plus">
+				<label for="c-plus-plus">C++</label>
+			</div>
+			<div class="lang">
+				<input type="radio" name="lang" value="C#" id="c-sharp">
+				<label for="c-sharp">C#</label>
+			</div>
+			<div class="lang">
+				<input type="radio" name="lang" value="Java" id="java">
+				<label for="java">Java</label>
+			</div>
+			<div class="lang">
+				<input type="radio" name="lang" value="VB" id="vb">
+				<label for="vb">VB.NET</label>
+			</div>
+		</div>
+
+		<div class="row save-empty middle-elements">
+			<label for="save-empty">Сохранять пустые строки</label>
+			<input type="checkbox" id="save-empty">
+		</div>
+
+		<div class="row variable-name">
+			<label for="variable-name-val">Название переменной</label>
+			<input type="text" id="variable-name-val" value="ce">
+		</div>
+
+		<div class="row middle-elements">
+			<label>Опции:</label>
+			<div class="lang">
+				<input type="radio" name="options" value="" checked="cheched" id="none">
+				<label for="none">Нет</label>
+			</div>
+			<div class="lang">
+				<input type="radio" name="options" value="\n" id="slash-n">
+				<label for="slash-n">Добавить \n в конце каждой подстроки</label>
+			</div>
+			<div class="lang">
+				<input type="radio" name="options" value=" " id="space">
+				<label for="space">Добавить пробел в конце каждой подстроки</label>
+			</div>
+		</div>
+
+		<div class="row your-string">
+			<label for="your-string-val">Ваша строка</label>
+			<textarea id="your-string-val" cols="30" rows="10"></textarea>
+		</div>
+
+		<div class="row result">
+			<label for="result">Результат</label>
+			<textarea id="result" cols="30" rows="10"></textarea>
+		</div>
+
+		<div class="row">
+			<button id="run" type="button">Конкатенация</button>			
+		</div>
+
 	</form>
 
 
 
 	<script src="js/common.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/run-app.js"></script>
 
 </body>
 </html>
