@@ -153,3 +153,6 @@ var app = (function() {
 }());
 
 
+getById("run").onclick = function(){
+    app.run();
+}
