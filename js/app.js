@@ -1,4 +1,4 @@
-var app = (function() {
+var App = (function() {
     var lang,
         variableName,
         variableNameId = 'variable-name-val',
@@ -154,5 +154,5 @@ var app = (function() {
 
 
 getById("run").onclick = function(){
-    app.run();
+    App.run();
 }
