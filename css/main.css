@@ -1,5 +1,7 @@
 body{
 	font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 .form-app{
 	width: 960px;
@@ -98,4 +100,9 @@ textarea {
 }
 #save-empty{
 	margin-left: 15px;
+}
+
+.title-page{
+    text-align: center;
+    font-size: 36px;
 }

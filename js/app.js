@@ -86,7 +86,7 @@ var App = (function() {
                     stringValFinal += 'String ' + varName + ' = ' + this.breakWords(arr,"+",option) + ';';
                     break;
                 case 'VB':
-                    stringValFinal += 'Dim ce As String\n' + varName + ' = ' + this.breakWords(arr,"&",option);
+                    stringValFinal += 'Dim ' + varName + ' As String\n' + varName + ' = ' + this.breakWords(arr,"&",option);
                     break;
                 default:
                     state = false;

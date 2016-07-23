@@ -16,3 +16,7 @@ var getByAttr = function(attr,name){
 
 }
 
+
+getById('variable-name-val').onkeyup = function (e) {
+	this.value = this.value.replace(/^([0-9])|(\W){1}/,"");
+}
